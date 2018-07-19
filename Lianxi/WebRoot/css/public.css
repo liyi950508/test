@@ -1,0 +1,100 @@
+body {
+  width: 1300px;
+  height: 90px;
+}
+body .public {
+  width: 100%;
+  height: 100%;
+}
+body .public .top-page {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #ADADAD;
+}
+body .public .top-page .top-page-left {
+  width: 48%;
+  height: 100%;
+  margin: 5px;
+  float: left;
+}
+body .public .top-page .top-page-left nav ul li {
+  padding-right: 10px;
+  float: left;
+  list-style: none;
+  margin-top: 5px;
+}
+body .public .top-page .top-page-left nav ul li .nav-item {
+  color: #32B757;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  padding: 2px;
+}
+body .public .top-page .top-page-right {
+  width: 50%;
+  height: 100%;
+  margin: 5px;
+  float: right;
+}
+body .public .top-page .top-page-right .search {
+  width: 70%;
+  height: 35px;
+  margin-top: 18px;
+  padding-left: 2px;
+  border: 1px solid #1B6D85;
+  border-radius: 5px;
+  float: left;
+  text-align: left;
+}
+body .public .top-page .top-page-right .search .search-input {
+  float: left;
+  width: 88%;
+  height: 100%;
+  border: none;
+  padding: 0px 8px;
+  border-right: 1px solid #1B6D85;
+  outline: none;
+  font-size: 15px;
+}
+body .public .top-page .top-page-right .search .search-icon {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-top: 6px;
+  margin-right: 10px;
+  display: inline-block;
+  background: url(../images/icon.png);
+}
+body .public .top-page .top-page-right .nav-other {
+  width: 25%;
+  height: 70%;
+  margin: 22px 20px 5px 5px;
+  float: right;
+}
+body .public .top-page .top-page-right .nav-other .centerbox {
+  margin-left: 10px;
+}
+body .public .top-page .top-page-right .nav-other .centerbox a {
+  margin: 0 0 5px 0;
+  color: #35B558;
+  font-size: 18px;
+}
+body .public .top-page .top-page-right .nav-other .centerbox span {
+  margin: 0 0 0 0;
+}
+body .public .top-page .top-page-right .nav-other .centerbox span a {
+  color: #35B558;
+  font-size: 18px;
+}
+body .public .top-page .top-page-right .nav-other .user-info .user-info-item {
+  font-size: 18px;
+  color: #32B757;
+  text-decoration: none;
+  margin-right: 4px;
+  margin-left: 7px;
+}
+body .public .top-page .top-page-right .nav-other .user-info i {
+  border-right: 1px solid #5E5E5E;
+  height: 20px;
+}

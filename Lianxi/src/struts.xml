@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.multipart.maxSize" value="157286400"/>
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- 用户action -->
+		<action name="userAction_*" class="com.action.UserAction" method="{1}">
+			<!-- 用户注册 -->
+			<result name="dealWith">/dealWith.jsp</result>
+			<!-- 用户登录 -->
+			<result name="loginSuccess">/dealWith.jsp</result>
+			<result name="loginUserError">/dealWith.jsp</result>
+			<result name="loginError">/dealWith.jsp</result>
+			<!-- 退出登录 -->
+			<result name="userexit">/jsp/userInfo/UserLogin.jsp</result>
+			<!-- 分页展示所有用户 -->
+			<result name="listAllUser">/jsp/admin/user/user_list.jsp</result>
+			<!-- 删除用户 -->
+			<result name="userDelete">/jsp/admin/user/user_list.jsp</result>
+			<!-- 更新用户信息 -->
+			<result name="userUpDate">/jsp/admin/user/user_list.jsp</result>
+			<result name="userEdit">/jsp/personal/My_Account.jsp</result>
+			<!-- 修改密码 -->
+			<result name="updatePwdSuccess">/dealWith.jsp</result>
+			<result name="passwordError">/dealWith.jsp</result>
+		</action>
+		
+		<!-- 资源action -->
+		<action name="resourceAction_*" class="com.action.ResourceAction" method="{1}">
+			<!-- =========资源上传========== -->
+			<!-- 资源上传成功 -->
+			<result name="upSuccess">/dealWith_1.jsp</result>
+			<result name="resourceNameError">/dealWith_1.jsp</result>
+			<result name="extentionError">/dealWith_1.jsp</result>
+			<!-- =========资源展示========== -->
+			<!-- 下载列表资源分页展示 -->
+			<result name="userListRes">/jsp/UpAndDownResource/Download_Resource.jsp</result>
+			<result name="adminListRes">/jsp/admin/resource/resource_list.jsp</result>
+			<result name="adminListNoRes">/jsp/admin/resource/resource_Nolist.jsp</result>
+			<result name="showJQXxByPage">/jsp/JiQiXueXi.jsp</result>
+			<result name="showMSSbByPage">/jsp/MoShiShiBie.jsp</result>
+			<!-- 用户上传资源分页展示 -->
+			<result name="showUpUserByPage">/jsp/personal/My_Upload.jsp</result>
+			<!-- 资源下载 -->
+			<result name="downResourceSuccess" type="stream">
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${java.net.URLEncoder.encode(downFileName,"UTF-8")}"</param>
+				<param name="bufferSize">1024</param> 
+			</result>
+			<result name="NotIntegral">/dealWith_1.jsp</result>
+			<!-- 资源收藏 -->
+			<result name="selectSuccess">/dealWith_1.jsp</result>
+			<result name="selectError">/dealWith_1.jsp</result>
+			<!-- 没有登陆 -->
+			<result name="BackLogin">/dealWith_1.jsp</result>
+		</action>
+		
+        <!-- 管理员action -->
+        <action name="adminAction_*" class="com.action.AdminAction" method="{1}">
+        	<!-- 管理员登录成功 -->
+        	<result name="adminLoginSuccess">/jsp/admin/admin_main.jsp</result>
+        	<!-- 管理员登录失败 -->
+        	<result name="adminLoginError">/jsp/admin/adminLogin.jsp</result>
+        	<!-- 管理员退出登录 -->
+        	<result name="userexit">/jsp/admin/adminLogin.jsp</result>
+        </action>
+        <!-- 用户下载action -->
+        <action name="userDownAction_*" class="com.action.UserDownAction" method="{1}">
+        	<result name="listDownResource">/jsp/personal/My_Download.jsp</result>
+        	<result name="userDownDelete">/dealWith_1.jsp</result>
+        </action>
+        <!-- 用户收藏action -->
+        <action name="userSelectAction_*" class="com.action.UserSelectAction" method="{1}">
+        	<!-- 分业展示 -->
+        	<result name="listSelectResource">/jsp/personal/My_Collection.jsp</result>
+        	<!-- 取消收藏 -->
+        	<result name="DeleteCollentSuccess">/dealWith_1.jsp</result>
+        </action>
+        
+        <!-- 视频action -->
+        <action name="videoAction_*" class="com.action.VideoAction" method="{1}">
+        	<!-- 视频上传 -->
+        	<result name="videoUpSuccess">/dealWith_1.jsp</result>
+        	<result name="fileNameError">/dealWith_1.jsp</result>
+        	<result name="extentionError">/dealWith_1.jsp</result>
+        	<!-- 视频下载 -->
+			<result name="downVideoSuccess" type="stream">
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${java.net.URLEncoder.encode(downVideoName,"UTF-8")}"</param>
+				<param name="bufferSize">1024*1024</param> 
+			</result>
+			<result name="NotIntegral">/dealWith_1.jsp</result>
+			<!-- 视频收藏-->
+        	<result name="selectVideoSuccess">/dealWith_1.jsp</result>
+        	<result name="selectVideoError">/dealWith_1.jsp</result>
+        	<!-- 提交问题 -->
+        	<result name="addQuestion">/dealWith_1.jsp</result>
+        	<!-- 查看相关提问 -->
+        	<result name="adminListVideo">/jsp/admin/video/quest_view.jsp</result>
+        	<result name="userListVideo">/jsp/video/quest_watch.jsp</result>
+        	<!-- 分页展示 -->
+        	<result name="listAllVideo">/jsp/Course.jsp</result>
+        	<!-- 视频搜索 -->
+	        <result name="showVideo">/jsp/sreach.jsp</result>
+	        <!-- 删除视频 -->
+	        <result name="DeleteVideoSucces">/jsp/admin/video/video_list.jsp</result>
+	        <!-- 更改视频资料 -->
+	        <result name="videoUpDate">/jsp/admin/video/video_list.jsp</result>   
+        </action>
+        
+        <!-- 用户视频action -->
+        <action name="userVideoAction_*" class="com.action.USerVideoAction" method="{1}">
+			<!-- 删除学习视频 -->
+        	<result name="DeleteStudyVideo">/dealWith_1.jsp</result>
+        	<!-- 删除收藏视频 -->
+        	<result name="DeleteCollentSuccess">/dealWith_1.jsp</result>
+        	<!-- 删除收藏视频 -->
+        	<result name="DeleteDownVideo">/dealWith_1.jsp</result>
+        	<!-- 视频分页展示 -->
+        	<result name="listSelectVideo">/jsp/personal/My_Course.jsp</result>
+        	<!-- 没有登陆 -->
+	        <result name="BackLogin">/dealWith_1.jsp</result>
+        </action>
+        
+        <!-- 社区action -->
+        <action name="sheQuAction_*" class="com.action.SheQuAction" method="{1}">
+	        <!-- 分页展示问题 -->	
+	        <result name="userListQuest">/jsp/SheQu/question.jsp</result>
+	      	<result name="adminListQuest">/jsp/admin/shequ/quest_list.jsp</result>
+	        <!-- 提交问题 -->
+	        <result name="addQuestion">/dealWith_1.jsp</result>
+	      	<!-- 查看问题相关回答 -->
+	        <result name="userQuestByAnswer">/jsp/SheQu/answer.jsp</result>
+	      	<result name="adminQuestByAnswer">/jsp/admin/shequ/answer_list.jsp</result>
+	      	<!-- 提交回答 -->
+	        <result name="addAnswer">/jsp/SheQu/answer.jsp</result>
+	        <!-- 问题搜索 -->
+	        <result name="showQuestion">/jsp/sreach.jsp</result>
+	        <!-- 更新视频信息 -->
+	        <result name="videoUpDate">/jsp/admin/video/video_list.jsp</result>
+	        <!-- 删除视频信息 -->
+	        <result name="DeleteVideoSucces">/jsp/admin/video/video_list.jsp</result>
+	        <!-- 首页 -->
+	        <result name="getshouye">/jsp/shouye.jsp</result>
+	        <!-- 不是提问者 -->
+	        <result name="NotQuestUser">/dealWith_1.jsp</result>
+	        <!-- 没有登陆 -->
+	        <result name="BackLogin">/dealWith_1.jsp</result>
+        </action>
+	</package>
+</struts>    

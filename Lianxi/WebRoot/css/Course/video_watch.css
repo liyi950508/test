@@ -1,0 +1,229 @@
+body {
+  width: 1300px;
+  height: 1300px;
+}
+body .wrapper {
+  width: 100%;
+  height: 100px;
+}
+body .wrapper .top-page {
+  width: 100%;
+  height: 100px;
+}
+body .wrapper .pager-title {
+  width: 1300px;
+  height: 50px;
+}
+body .wrapper .pager-title .title {
+  width: 700px;
+  height: 100%;
+  margin: 0 100px 0 180px;
+}
+body .wrapper .pager-title .title p {
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  list-style: none;
+}
+body .wrapper .pager-main {
+  width: 100%;
+  height: 420px;
+}
+body .wrapper .pager-main .pager {
+  width: 770px;
+  height: 420px;
+  margin-left: 180px;
+  float: left;
+}
+body .wrapper .pager-main .pager .pager-cont {
+  width: 700px;
+  height: 420px;
+  float: left;
+}
+body .wrapper .pager-main .pager .pager-cont .form1 .video {
+  width: 700px;
+  height: 420px;
+}
+body .wrapper .pager-main .pager .player {
+  width: 70px;
+  height: 394px;
+  background-color: #444444;
+  float: right;
+}
+body .wrapper .pager-main .pager .player ul {
+  padding: 0 0 0 10px;
+  margin: 0 0 0 0;
+}
+body .wrapper .pager-main .pager .player ul li {
+  width: 100%;
+  height: 50px;
+  margin: 40px 0 40px 0;
+}
+body .wrapper .pager-main .pager .player ul li .aa-a {
+  width: 40px;
+  height: 30px;
+  margin-left: 4px;
+  background-color: #fff;
+  padding-top: 5px;
+}
+body .wrapper .pager-main .pager .player ul li .aa-a a {
+  margin: 14px 0 0 4px;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid #fff;
+}
+body .wrapper .pager-main .pager .player ul li input {
+  width: 40px;
+  height: 30px;
+  margin: 10px 0 0 4px;
+  border: 1px solid #E3E3E3;
+  background-color: #fff;
+}
+body .wrapper .pager-main .question {
+  display: none;
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin: 50px 10px 20px 10px;
+}
+body .wrapper .pager-main .question .form {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .pager-main .question .form .textarea.input {
+  width: 100%;
+  height: 200px;
+}
+body .wrapper .pager-main .question .form .textarea.input .input-item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+  border-radius: 7px;
+  outline: none;
+}
+body .wrapper .pager-main .question .form .input-submit {
+  width: 150px;
+  height: 40px;
+  margin: 10px 0 0 75px;
+  border: 1px solid #35B558;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #35B558;
+}
+body .wrapper .lesson {
+  width: 1000px;
+  height: 480px;
+  margin: 0px 100px 20px 100px;
+}
+body .wrapper .lesson .video-list {
+  width: 390px height: 100%;
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #E3E3E3;
+}
+body .wrapper .lesson .video-list .course-title {
+  width: 100%;
+  height: 40px;
+}
+body .wrapper .lesson .video-list .course-title p {
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .lesson .video-list .course-list ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+body .wrapper .lesson .video-list .course-list ul li {
+  list-style: none;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 25px;
+}
+body .wrapper .lesson .video-list .course-intro {
+  width: 100%;
+  height: auto;
+}
+body .wrapper .lesson .video-list .course-intro p {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+}
+body .wrapper .lesson .video-list .course-intro .p-1 {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+}
+body .wrapper .lesson .video-question {
+  width: 600px;
+  height: 400px;
+  float: right;
+}
+body .wrapper .lesson .video-question .quest-item {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .lesson .video-question .quest-item .quest-title {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wrapper .lesson .video-question .quest-item .quest-title ul {
+  margin: 0 0 0 0;
+  padding: 0 0 0 70px;
+}
+body .wrapper .lesson .video-question .quest-item .quest-title ul li {
+  float: left;
+  margin: 0 40px 0 40px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  width: 70px;
+}
+body .wrapper .lesson .video-question .quest-item .quest-title ul li a {
+  text-decoration: none;
+  color: #333;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list {
+  width: 100%;
+  height: 60px;
+  display: block;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list .resource {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list .resource .quuest-name {
+  width: 100%;
+  height: 30px;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list .resource .quuest-name a {
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list .resource .quest-connect {
+  width: 100%;
+  height: 30px;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list .resource .quest-connect ul {
+  margin: 0 auto;
+  padding-left: 0;
+}
+body .wrapper .lesson .video-question .quest-item .resource-list .resource .quest-connect ul li {
+  float: left;
+  font-size: 14px;
+  margin-left: 30px;
+  text-decoration: none;
+  list-style: none;
+}

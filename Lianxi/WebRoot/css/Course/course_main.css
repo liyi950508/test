@@ -1,0 +1,276 @@
+body {
+  width: 1300px;
+  height: 1300px;
+}
+body .wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 15px auto;
+}
+body .wrapper .top-page {
+  width: 100%;
+  height: 100px;
+}
+body .wrapper .pager {
+  width: 100%;
+  height: 1200px;
+}
+body .wrapper .pager .container {
+  width: 100%;
+  height: 100%;
+  margin: 15px auto;
+}
+body .wrapper .pager .container .wraper {
+  width: 100%;
+  height: 1150px;
+}
+body .wrapper .pager .container .wraper .aside {
+  width: 190px;
+  height: auto;
+  float: left;
+  margin: 15px 5px 20px 80px;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: 1px solid #C0C0C0;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi .a-a {
+  width: 100%;
+  height: 35px;
+  margin: 10px auto;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi .a-a a {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  padding-left: 15px;
+  color: #000000;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi ul {
+  padding-left: 0;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi ul li {
+  height: 40px;
+  padding-left: 30px;
+  line-height: 45px;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+  font-family: Verdana, "Microsoft Yahei", Helvetica;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi ul li a {
+  color: #333;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge {
+  width: 900px;
+  height: auto;
+  float: right;
+  margin: 15px 100px 20px 5px;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item {
+  width: 100%;
+  height: 40px;
+  margin: 0px auto;
+  border: 1px solid #E3E3E3;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont {
+  width: 40%;
+  height: 40px;
+  margin: 0px auto;
+  float: left;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont ul {
+  width: 300px;
+  height: 100%;
+  margin: 0 0 0 50px;
+  padding-left: 0;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont ul li {
+  float: left;
+  height: 40px;
+  padding-left: 30px;
+  line-height: 45px;
+  font-family: Verdana, "Microsoft Yahei", Helvetica;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont ul li a {
+  color: #262626;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a {
+  width: 48%;
+  height: 40px;
+  float: right;
+  margin-left: 40px;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a p {
+  margin: 0 0 0 0;
+  color: #35B558;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .video-list {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list {
+  width: 100%;
+  height: 185px;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item {
+  width: 750px;
+  height: 100%;
+  float: left;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .v-item {
+  width: 260px;
+  height: 100%;
+  float: left;
+  margin-right: 7px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .v-item .pic {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage {
+  width: 467px;
+  height: 100%;
+  margin: 5px;
+  float: right;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-title {
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-title p {
+  width: 50px;
+  color: #333;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  float: left;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-title a {
+  width: 415px;
+  height: 100%;
+  color: #333;
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  float: right;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-study {
+  width: 100%;
+  height: 25px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-study p {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  color: #4CAE4C;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-1 {
+  width: 100%;
+  height: 25px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-1 ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-1 ul li {
+  float: left;
+  list-style: none;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 25px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-intro {
+  width: 100%;
+  height: auto;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-intro p {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .lesson-item .video-mesage .video-intro .p-1 {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .aside-a {
+  width: 140px;
+  height: 100px;
+  padding-top: 40px;
+  float: right;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .aside-a .nav-other {
+  width: 100%;
+  height: 40px;
+}
+body .wrapper .pager .container .wraper .badge .video-list .lesson-list .aside-a .nav-other .download-item {
+  list-style: none;
+  text-decoration: none;
+  color: #32B757;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe {
+  width: 100%;
+  margin: 20px 0 10px 20px;
+  height: 80px;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav ul {
+  width: auto;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav ul li {
+  display: table-cell;
+  width: 58px;
+  height: 30px;
+  float: left;
+  list-style: none;
+  border: 1px solid #C0C0C0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav ul li .a-cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #35B558;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav p {
+  margin: 0 0 0 0;
+  color: #35B558;
+  text-align: center;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav p span {
+  color: #C7254E;
+}

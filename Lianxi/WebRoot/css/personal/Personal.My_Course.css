@@ -1,0 +1,242 @@
+body {
+  background-color: #E3E3E3;
+  width: 1250px;
+  height: 900px;
+}
+body .wraper {
+  width: 100%;
+  height: 100%;
+}
+body .wraper .top-wraper {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+body .wraper .wrapper {
+  width: 100%;
+  margin: 30px 0px 0 80px;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+body .wraper .wrapper .directory {
+  float: left;
+  font-size: 18px;
+  width: 210px;
+  background-color: #fff;
+}
+body .wraper .wrapper .directory ul {
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  list-style: none;
+}
+body .wraper .wrapper .directory ul li {
+  height: 60px;
+  padding-left: 20px;
+  line-height: 45px;
+  border-top: 1px solid #e4e4e4;
+  font-family: Verdana, "Microsoft Yahei", Helvetica;
+}
+body .wraper .wrapper .directory ul li a {
+  color: #333;
+  text-decoration: none;
+}
+body .wraper .wrapper .show {
+  width: 860px;
+  height: 800px;
+  margin-left: 240px;
+  background-color: #fff;
+}
+body .wraper .wrapper .show .show-top {
+  height: 60px;
+  margin: 0 5px;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wraper .wrapper .show .show-top P {
+  width: 25%;
+  height: 75%;
+  margin: 15px 0 0 40px;
+  padding-right: 20px;
+  font-size: 20px;
+  float: left;
+}
+body .wraper .wrapper .show .show-top .video-statu {
+  width: 65%;
+  height: 100%;
+  float: right;
+}
+body .wraper .wrapper .show .show-top .video-statu ul {
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
+body .wraper .wrapper .show .show-top .video-statu ul li {
+  margin: 20px 40px 0 0;
+  float: left;
+  list-style: none;
+  font-size: 18px;
+}
+body .wraper .wrapper .show .show-top .video-statu ul li a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #080808;
+  list-style: none;
+}
+body .wraper .wrapper .show .show-top .video-statu .video-d {
+  width: 35%;
+  height: 100%;
+  float: right;
+}
+body .wraper .wrapper .show .show-top .video-statu .video-d p {
+  width: 100%;
+  height: 75%;
+  margin: 15px 0 0 40px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #35B558;
+}
+body .wraper .wrapper .show .video-list {
+  width: 100%;
+  height: 600px;
+  margin: 10px auto;
+}
+body .wraper .wrapper .show .video-list .lesson-list {
+  width: 100%;
+  height: 168px;
+  float: left;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item {
+  width: 79%;
+  height: 100%;
+  float: left;
+  margin-left: 50px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .v-item {
+  width: 260px;
+  height: 100%;
+  float: left;
+  margin-right: 7px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .v-item .pic {
+  width: 100%;
+  height: 100%;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage {
+  width: 390px;
+  height: 100%;
+  margin: 5px;
+  padding-top: 10px;
+  float: right;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-title {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-title p {
+  width: 50px;
+  color: #333;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  float: left;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-title a {
+  width: 340px;
+  height: 100%;
+  color: #333;
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  float: right;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-study {
+  width: 100%;
+  height: 25px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-study p {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  color: #4CAE4C;
+  list-style: none;
+  text-decoration: none;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-1 {
+  width: 100%;
+  height: 25px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-1 ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-item .video-mesage .video-1 ul li {
+  float: left;
+  width: 150px;
+  list-style: none;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 25px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-right {
+  width: 13%;
+  height: 100%;
+  float: right;
+  padding-top: 80px;
+}
+body .wraper .wrapper .show .video-list .lesson-list .lesson-right a {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: #35B558;
+  text-decoration: none;
+}
+body .wraper .wrapper .show .page-FeiYe {
+  width: 100%;
+  margin: 20px 0 10px 20px;
+  height: 80px;
+}
+body .wraper .wrapper .show .page-FeiYe .feiye-nav {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
+body .wraper .wrapper .show .page-FeiYe .feiye-nav ul {
+  width: auto;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+}
+body .wraper .wrapper .show .page-FeiYe .feiye-nav ul li {
+  display: table-cell;
+  width: 58px;
+  height: 30px;
+  float: left;
+  list-style: none;
+  border: 1px solid #C0C0C0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+body .wraper .wrapper .show .page-FeiYe .feiye-nav ul li .a-cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #35B558;
+  list-style: none;
+}
+body .wraper .wrapper .show .page-FeiYe .feiye-nav p {
+  margin: 0 0 0 0;
+  color: #35B558;
+  text-align: center;
+}
+body .wraper .wrapper .show .page-FeiYe .feiye-nav p span {
+  color: #C7254E;
+}

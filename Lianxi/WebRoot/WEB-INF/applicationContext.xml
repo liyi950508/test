@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<!-- 定义数据源 -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<!-- 指定连接数据库的驱动 -->
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<!-- 指定连接数据库的URL -->
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/bishe">
+		</property>
+		<!-- 指定用户名 -->
+		<property name="username" value="root"></property>
+		<!-- 指定密码 -->
+		<property name="password" value="123456789"></property>
+	</bean>
+	
+	<!-- 配置SessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 依赖注入已经配置好的数据源DataSource -->
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<!-- 设置hibernate的属性 -->
+		<!-- 指定hibernate核心配置文件 -->
+		<property name="configLocations" value="classpath:hibernate.cfg.xml" />
+	</bean>
+
+	<!-- =========================Dao配置========================== -->
+	<!-- 用户Dao配置 -->
+	<bean id="userDao" class="com.dao.user.UserDaoImpl" abstract="false" lazy-init="default" autowire="default">
+	 	<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	 </bean>
+	<!-- 资源Dao配置 -->
+	<bean id="resourceDao" class="com.dao.resource.ResourceDaoImpl" abstract="false" lazy-init="default" autowire="default">
+	 	<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	<!-- 管理员Dao配置 -->
+	<bean id="adminDao" class="com.dao.admin.AdminDaoImpl" abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	<!-- 配置用户下载Dao -->
+	<bean id="userDownDao" class="com.dao.userdown.UserDownDaoImpl" abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	<!-- 配置用户收藏到Dao-->
+	<bean id="userSelectDao" class="com.dao.userselect.UserSelectDaoImpl" abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	<!-- 视频Dao配置 -->
+	<bean id="videoDao" class="com.dao.video.VideoDaoImpl" abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	<!-- 用户视频Dao配置 -->
+	<bean id="userVideoDao" class="com.dao.uservideo.UserVideoDaoImpl" abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	<bean id="sheQuDao" class="com.dao.shequ.SheQuDaoImpl" abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+	</bean>
+	
+	<!-- ==========================action配置=========================== -->
+	<!-- 用户action配置 -->
+	<bean id="userAction" class="com.action.UserAction"> 
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	<!-- 资源action配置 -->
+	<bean id="resourceAction" class="com.action.ResourceAction">
+		<property name="resourceDao" ref="resourceDao"></property>
+	</bean>
+	<!-- 管理员action配置 -->
+	<bean id="adminAction" class="com.action.AdminAction">
+		<property name="adminDao" ref="adminDao"></property>
+	</bean>
+	<!-- =========个人中心action配置=========== -->
+	<!-- 用户下载资源action配置 --> 
+	<bean id="userDownAction" class="com.action.UserDownAction">
+		<property name="userDownDao" ref="userDownDao"></property>
+	</bean>
+	<!-- 用户收藏资源action配置 -->
+	<bean id="userSelectAction" class="com.action.UserSelectAction">
+		<property name="userSelectDao" ref="userSelectDao"></property>
+	</bean>
+	<!-- 视频action配置 -->
+	<bean id="videoAction" class="com.action.VideoAction">
+		<property name="videoDao" ref="videoDao"></property>
+	</bean>
+	<!-- 用户视频action配置 -->
+	<bean id="userVideoAction" class="com.action.USerVideoAction">
+		<property name="userVideoDao" ref="userVideoDao"></property>
+	</bean>
+	
+	<bean id="sheQuAction" class="com.action.SheQuAction" >
+		<property name="sheQuDao" ref="sheQuDao"></property>
+	</bean>
+	
+</beans>

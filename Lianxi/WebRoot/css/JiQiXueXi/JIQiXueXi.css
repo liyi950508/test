@@ -1,0 +1,254 @@
+body {
+  width: 1300px;
+  height: 1300px;
+}
+body .wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 15px auto;
+}
+body .wrapper .top-page {
+  width: 100%;
+  height: 100px;
+}
+body .wrapper .pager {
+  width: 100%;
+  height: 1200px;
+}
+body .wrapper .pager .container {
+  width: 100%;
+  height: 100%;
+  margin: 15px auto;
+}
+body .wrapper .pager .container .wraper {
+  width: 100%;
+  height: 1150px;
+}
+body .wrapper .pager .container .wraper .aside {
+  width: 180px;
+  height: auto;
+  float: left;
+  margin: 70px 5px 20px 80px;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: 1px solid #C0C0C0;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi .a-a {
+  width: 100%;
+  height: 35px;
+  margin: 10px auto;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi .a-a a {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  padding-left: 15px;
+  color: #000000;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi ul {
+  padding-left: 0;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi ul li {
+  height: 40px;
+  padding-left: 30px;
+  line-height: 45px;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+  font-family: Verdana, "Microsoft Yahei", Helvetica;
+}
+body .wrapper .pager .container .wraper .aside .jiqixuexi ul li a {
+  color: #333;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge {
+  width: 910px;
+  height: auto;
+  float: right;
+  margin: 15px 100px 20px 5px;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item {
+  width: 100%;
+  height: 40px;
+  margin: 0px auto;
+  border: 1px solid #E3E3E3;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont {
+  width: 50%;
+  height: 40px;
+  margin: 0px auto;
+  float: left;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 10px;
+  padding-left: 0;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont ul li {
+  float: left;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 45px;
+  font-family: Verdana, "Microsoft Yahei", Helvetica;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-cont ul li a {
+  color: #262626;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a {
+  width: 48%;
+  height: 40px;
+  float: right;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a .orderby {
+  width: 30%;
+  height: 100%;
+  margin: 0px auto;
+  float: left;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a .orderby ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 10px;
+  padding-left: 0;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a .orderby ul li {
+  float: left;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 45px;
+  font-family: Verdana, "Microsoft Yahei", Helvetica;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a .orderby ul li a {
+  color: #262626;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .wrap-item .wrap-a p {
+  width: 68%;
+  height: 100%;
+  float: right;
+  color: #35B558;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .resource-list {
+  width: 100%;
+  height: auto;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource {
+  width: 100%;
+  height: 120px;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .resource-cont {
+  width: 820px;
+  height: 100%;
+  padding-top: 15px;
+  float: left;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .resource-cont dl {
+  margin: 0 0 5px 0;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .resource-cont dl dt {
+  width: 100%;
+  height: 25px;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .resource-cont dl dt .a-cont {
+  color: #1B6D85;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .resource-cont dl dd {
+  margin-left: 15px;
+  width: 100%;
+  height: auto;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .list-item {
+  height: 45px;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .list-item ul {
+  height: 100%;
+  margin: 0 0;
+  padding: 5px 0 5px 0;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .list-item ul li {
+  padding-right: 10px;
+  float: left;
+  list-style: none;
+  margin-top: 5px;
+  margin-right: 15px;
+  color: #ADADAD;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .aside {
+  width: 80px;
+  height: 100%;
+  margin: 0 0 0 0;
+  float: right;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .aside .nav-other {
+  width: 100%;
+  height: 40px;
+}
+body .wrapper .pager .container .wraper .badge .resource-list .resource .aside .nav-other .download-item {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe {
+  width: 100%;
+  margin: 20px 0 10px 20px;
+  height: 80px;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav {
+  width: 97%;
+  height: 40px;
+  margin: 5px;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav ul {
+  width: 100%;
+  height: 100%;
+  display: table;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav ul li {
+  display: table-cell;
+  width: 58px;
+  height: 30px;
+  float: left;
+  list-style: none;
+  border: 1px solid #C0C0C0;
+  margin: 0 auto;
+  font-size: 14px;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav ul li .a-cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #35B558;
+  list-style: none;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav p {
+  margin: 0 0 0 0;
+  color: #35B558;
+  text-align: center;
+}
+body .wrapper .pager .container .wraper .badge .page-FeiYe .feiye-nav p span {
+  color: #C7254E;
+}

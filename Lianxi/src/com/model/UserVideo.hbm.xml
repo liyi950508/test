@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.UserVideo" 
+    table="user_video"
+    lazy="false"
+>
+
+    <id
+        name="userVideoId"
+        type="java.lang.Integer"
+        column="user_video_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="videoName"
+        type="java.lang.String"
+        column="video_name"
+        length="255"
+    />
+    <property
+        name="videoUser"
+        type="java.lang.String"
+        column="video_user"
+        length="255"
+    />
+    <property
+        name="videoType"
+        type="java.lang.String"
+        column="video_type"
+        length="255"
+    />
+     <property
+        name="videoPath"
+        type="java.lang.String"
+        column="video_path"
+        length="255"
+    />
+    <property
+        name="label"
+        type="java.lang.String"
+        column="label"
+        length="255"
+    />
+    <property
+        name="category"
+        type="java.lang.String"
+        column="category"
+        length="255"
+    />
+    <property
+        name="download"
+        type="java.lang.String"
+        column="download"
+        length="255"
+    />
+    <property
+        name="collent"
+        type="java.lang.String"
+        column="collent"
+        length="255"
+    />
+    <property
+        name="study"
+        type="java.lang.String"
+        column="study"
+        length="255"
+    />
+    <property
+        name="allTime"
+        type="java.lang.String"
+        column="AllTime"
+        length="255"
+    />
+    <property
+        name="currentTime"
+        type="java.lang.String"
+        column="currentTime"
+        length="255"
+    />
+    <property
+        name="videoAuthor"
+        type="java.lang.String"
+        column="video_author"
+        length="255"
+    />
+
+    <!-- Associations -->
+  	 <!-- 双向一对一关联video，为主表 -->
+	<one-to-one name="video" class="com.model.Video" fetch="select" cascade="save-update" />
+</class>
+</hibernate-mapping>

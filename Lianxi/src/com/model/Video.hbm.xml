@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.Video" 
+    table="video"
+    lazy="false"
+>
+
+    <id
+        name="videoId"
+        type="java.lang.Integer"
+        column="video_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="videoName"
+        type="java.lang.String"
+        column="video_name"
+        length="255"
+    />
+     <property
+        name="videoType"
+        type="java.lang.String"
+        column="video_type"
+        length="255"
+    />
+    <property
+        name="videoLabel"
+        type="java.lang.String"
+        column="video_label"
+        length="255"
+    />
+    <property
+        name="studyNum"
+        type="java.lang.Integer"
+        column="study_num"
+        length="10"
+    />
+    <property
+        name="courseIntro"
+        type="java.lang.String"
+        column="course_intro"
+        length="500"
+    />
+    <property
+        name="courseAlltime"
+        type="java.lang.String"
+        column="course_alltime"
+        length="10"
+    />
+    <property
+        name="videoPath"
+        type="java.lang.String"
+        column="video_path"
+        length="255"
+    />
+    <property
+        name="videoAuthor"
+        type="java.lang.String"
+        column="video_author"
+        length="255"
+    />
+    <property
+        name="updateTime"
+        type="java.sql.Date"
+        column="update_time"
+        length="10"
+    />
+	<property
+        name="category"
+        type="java.lang.String"
+        column="category"
+        length="255"
+    />
+    <!-- Associations -->
+	<!-- 双向一对一关联uservideo，为主表 -->
+	  	<many-to-one name="userVideo" class="com.model.UserVideo" fetch="join" unique="true" cascade="save-update">
+  		<column name="user_video_id" />
+  	</many-to-one>
+  	<!-- 单向一对多关联Question -->
+  	<set name="question" table="question" inverse="false" lazy="false" cascade="save-update">
+  		<key>
+  			<column name="video_id" />
+  		</key>
+  		<one-to-many class="com.model.Question"/>
+  	</set>
+</class>
+</hibernate-mapping>

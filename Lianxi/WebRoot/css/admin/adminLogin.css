@@ -1,0 +1,95 @@
+body {
+  width: 1300px;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+}
+body .div1 {
+  background-color: #ededed;
+  margin: 0 auto;
+  padding: 0px;
+  width: 80%;
+  height: 768px;
+}
+body .div1 .div2_1 {
+  width: 100%;
+  height: 100px;
+  background-color: #1183C2;
+}
+body .div1 .div2_1 .div3_1 {
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+body .div1 .div2_1 .div3_1 img {
+  width: 100%;
+  height: 100%;
+  margin: 15px 0 0 120px;
+}
+body .div1 .div2_1 .div3_2 {
+  margin: 25px 0 0 200px;
+  padding: 0px;
+  float: left;
+  color: #FFF;
+  font-size: 48px;
+}
+body .div1 .div2_2 {
+  margin: 50px 0 0 250px;
+  background-color: #CCC;
+  width: 50%;
+  height: 300px;
+}
+body .div1 .div2_2 center {
+  width: 100%;
+  height: 100%;
+}
+body .div1 .div2_2 center #form1 {
+  width: 100%;
+  height: 100%;
+}
+body .div1 .div2_2 center #form1 table {
+  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  table-layout: fixed;
+}
+body .div1 .div2_2 center #form1 table tr .td-1 {
+  text-align: center;
+}
+body .div1 .div2_2 center #form1 table tr .td-2 {
+  text-align: right;
+}
+body .div1 .div2_2 center #form1 table tr .td-3 {
+  text-align: left;
+}
+body .div1 .div2_2 center #form1 table tr .td-3 .input-1 {
+  width: 160px;
+}
+body .div1 .div2_2 center #form1 table tr .td-4 {
+  text-align: left;
+}
+body .div1 .div2_2 center #form1 table tr .td-5 {
+  text-align: right;
+}
+body .div1 .div2_2 center #form1 table tr .td-6 {
+  text-align: left;
+}
+body .div1 .div2_2 center #form1 table tr .td-6 .input-2 {
+  width: 160px;
+}
+body .div1 .div2_2 center #form1 table tr .td-7 {
+  text-align: left;
+}
+body .div1 .div2_2 center #form1 table tr .td-8 .input-3 {
+  width: 100px;
+  height: 30px;
+}
+body .div1 .div2_2 #errspan {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}

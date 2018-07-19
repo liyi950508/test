@@ -1,0 +1,95 @@
+body .middle-page {
+  width: 600px;
+  height: 600px;
+  margin: auto auto;
+}
+body .middle-page .page-header {
+  width: 100%;
+  height: 40px;
+  margin: 5px auto;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .middle-page .page-header p {
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: #35B558;
+}
+body .middle-page .upload {
+  width: 100%;
+  height: 570px;
+  margin-top: 30px;
+}
+body .middle-page .upload .form {
+  width: 100%;
+}
+body .middle-page .upload .form .form-item {
+  width: 100%;
+  height: 70px;
+}
+body .middle-page .upload .form .form-item .form-cont {
+  width: 18%;
+  height: 100%;
+  float: left;
+}
+body .middle-page .upload .form .form-item .form-cont p {
+  float: right;
+  padding-right: 8px;
+}
+body .middle-page .upload .form .form-item .item-cont {
+  width: 77%;
+  height: 100%;
+  float: right;
+}
+body .middle-page .upload .form .form-item .item-cont .note {
+  padding-top: 17px;
+}
+body .middle-page .upload .form .form-item .item-cont .note .input-item {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #737373;
+  border-radius: 4px;
+}
+body .middle-page .upload .form .form-item .item-cont .note .textarea-input {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #737373;
+  border-radius: 4px;
+}
+body .middle-page .upload .form .form-item .form-submit {
+  margin-left: 200px;
+}
+body .middle-page .upload .form .form-item .form-submit .item-submit {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #32B757;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+}
+body .middle-page .upload .form .form-intro {
+  width: 100%;
+  height: 110px;
+}
+body .middle-page .upload .form .form-intro .form-cont {
+  width: 18%;
+  height: 100%;
+  float: left;
+}
+body .middle-page .upload .form .form-intro .form-cont p {
+  float: right;
+  padding-right: 8px;
+}
+body .middle-page .upload .form .form-intro .item-cont {
+  width: 77%;
+  height: 100%;
+  float: right;
+}
+body .middle-page .upload .form .form-intro .item-cont .note {
+  padding-top: 17px;
+}
+body .middle-page .upload .form .form-intro .item-cont .note .textarea-input {
+  width: 300px;
+  height: 80px;
+}

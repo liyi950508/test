@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.Comment" 
+    table="comments"
+    lazy="false"
+>
+
+    <id
+        name="commentsId"
+        type="java.lang.Integer"
+        column="comments_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="commentsName"
+        type="java.lang.String"
+        column="comments_name"
+        length="500"
+    />
+    <property
+        name="commmetsUser"
+        type="java.lang.String"
+        column="commmets_user"
+        length="255"
+    />
+    <property
+        name="commentsTime"
+        type="java.sql.Date"
+        column="comments_time"
+        length="10"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

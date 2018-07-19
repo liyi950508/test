@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+
+<class name="com.model.UserNew" table="user_news" lazy="false">
+    <id name="newsId" type="java.lang.Integer" column="news_id">
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="userName"
+        type="java.lang.String"
+        column="user_name"
+        length="255"
+    />
+    <property
+        name="newsName"
+        type="java.lang.String"
+        column="news_name"
+        length="1500"
+    />
+    <property
+        name="newsTime"
+        type="java.sql.Date"
+        column="news_time"
+        length="10"
+    />
+    <property
+        name="newsRead"
+        type="java.lang.String"
+        column="news_read"
+        length="55"
+    />
+</class>
+</hibernate-mapping>

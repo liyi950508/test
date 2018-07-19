@@ -1,0 +1,95 @@
+body {
+  width: 900px;
+  height: 800px;
+}
+body .user {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+body .user .user_list nav {
+  border-top: 1px solid #C0C0C0;
+  border-left: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+}
+body .user .user_list nav ul {
+  border-top: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+}
+body .user .user_list nav ul li {
+  width: 16.55%;
+  height: 100%;
+  float: left;
+  list-style: none;
+  border-right: 1px solid #C0C0C0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+body .user .user_list nav ul li p {
+  color: #000000;
+  text-decoration: none;
+  margin: 5px;
+  padding: 2px;
+}
+body .user .user_list nav ul li i {
+  margin: auto 4px;
+}
+body .user .user_list nav ul li a {
+  margin-top: 5px;
+  color: #35B558;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+body .user .user_list nav ul li a:hover {
+  background-color: #35B558;
+  color: #A94442;
+}
+body .user .page-FeiYe {
+  width: 100%;
+  margin: 20px 0 10px 20px;
+  height: 80px;
+}
+body .user .page-FeiYe .feiye-nav {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
+body .user .page-FeiYe .feiye-nav ul {
+  width: auto;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+}
+body .user .page-FeiYe .feiye-nav ul li {
+  display: table-cell;
+  width: 58px;
+  height: 30px;
+  float: left;
+  list-style: none;
+  border: 1px solid #C0C0C0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+body .user .page-FeiYe .feiye-nav ul li .a-cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #35B558;
+  list-style: none;
+}
+body .user .page-FeiYe .feiye-nav p {
+  margin: 0 0 0 0;
+  color: #35B558;
+  text-align: center;
+}
+body .user .page-FeiYe .feiye-nav p span {
+  color: #C7254E;
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.UserDownload" 
+    table="user_download"
+    lazy="false"
+>
+
+    <id
+        name="downloadId"
+        type="java.lang.Integer"
+        column="download_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="downName"
+        type="java.lang.String"
+        column="down_name"
+        length="255"
+    />
+    <property
+        name="type"
+        type="java.lang.String"
+        column="type"
+        length="255"
+    />
+    <property
+        name="downloadTime"
+        type="java.sql.Date"
+        column="download_time"
+        length="10"
+    />
+    <property
+        name="uploadUser"
+        type="java.lang.String"
+        column="upload_user"
+        length="255"
+    />
+    <property
+        name="integral"
+        type="java.lang.Integer"
+        column="integral"
+        length="10"
+    />
+    <property
+        name="category"
+        type="java.lang.String"
+        column="category"
+        length="255"
+    />
+    <property
+        name="label"
+        type="java.lang.String"
+        column="label"
+        length="255"
+    />
+    <property
+        name="downUser"
+        type="java.lang.String"
+        column="down_user"
+        length="255"
+    />
+
+    <many-to-one name="resource" class="com.model.Resource" fetch="select" unique="true" cascade="save-update">
+  		<column name="resource_id" />
+  	</many-to-one>
+  
+
+</class>
+</hibernate-mapping>

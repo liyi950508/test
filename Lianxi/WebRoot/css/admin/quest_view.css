@@ -1,0 +1,187 @@
+body .wrapper {
+  width: 1300px;
+  height: 190px;
+}
+body .wrapper .video-list {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+body .wrapper .video-list .lesson-list {
+  width: 70%;
+  height: 185px;
+  margin-left: 200px;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .wrapper .video-list .lesson-list .lesson-item {
+  width: 750px;
+  height: 100%;
+  float: left;
+}
+body .wrapper .video-list .lesson-list .lesson-item .v-item {
+  width: 260px;
+  height: 100%;
+  float: left;
+  margin-right: 7px;
+}
+body .wrapper .video-list .lesson-list .lesson-item .v-item .pic {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage {
+  width: 467px;
+  height: 100%;
+  margin: 5px;
+  float: right;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-study {
+  width: 100%;
+  height: 25px;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-study p {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  color: #4CAE4C;
+  list-style: none;
+  text-decoration: none;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-1 {
+  width: 100%;
+  height: 25px;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-1 ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-1 ul li {
+  float: left;
+  list-style: none;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 25px;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-intro {
+  width: 100%;
+  height: auto;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-intro p {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+}
+body .wrapper .video-list .lesson-list .lesson-item .video-mesage .video-intro .p-1 {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+}
+body .wrapper .video-list .lesson-list .aside-a {
+  width: 140px;
+  height: 100px;
+  padding-top: 40px;
+  float: right;
+}
+body .wrapper .video-list .lesson-list .aside-a .nav-other {
+  width: 100%;
+  height: 40px;
+}
+body .wrapper .video-list .lesson-list .aside-a .nav-other .download-item {
+  list-style: none;
+  text-decoration: none;
+  color: #32B757;
+}
+body .quest-wraper {
+  width: 1300px;
+  height: auto;
+}
+body .quest-wraper .question-list {
+  width: 70%;
+  height: 80px;
+  margin-left: 100px;
+}
+body .quest-wraper .question-list .resource {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #E3E3E3;
+}
+body .quest-wraper .question-list .resource .quest-name {
+  width: 100%;
+  height: 50px;
+  margin: 5px auto;
+}
+body .quest-wraper .question-list .resource .quest-name a {
+  font-size: 16px;
+  color: #35B558;
+  text-decoration: none;
+  list-style: none;
+}
+body .quest-wraper .question-list .quest-connect {
+  width: 100%;
+  height: 30px;
+}
+body .quest-wraper .question-list .quest-connect ul {
+  margin: 0 auto;
+  padding-left: 0;
+}
+body .quest-wraper .question-list .quest-connect ul li {
+  width: 150px;
+  float: left;
+  font-size: 14px;
+  margin-left: 30px;
+  text-decoration: none;
+  list-style: none;
+}
+body .quest-wraper .question-list .quest-connect ul li a {
+  font-size: 16px;
+  color: #35B558;
+  text-decoration: none;
+  list-style: none;
+}
+body .quest-wraper .page-FeiYe {
+  width: 100%;
+  margin: 20px 0 10px 20px;
+  height: 80px;
+}
+body .quest-wraper .page-FeiYe .feiye-nav {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
+body .quest-wraper .page-FeiYe .feiye-nav ul {
+  width: auto;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+}
+body .quest-wraper .page-FeiYe .feiye-nav ul li {
+  display: table-cell;
+  width: 58px;
+  height: 30px;
+  float: left;
+  list-style: none;
+  border: 1px solid #C0C0C0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+body .quest-wraper .page-FeiYe .feiye-nav ul li .a-cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #35B558;
+  list-style: none;
+}
+body .quest-wraper .page-FeiYe .feiye-nav p {
+  margin: 0 0 0 0;
+  color: #35B558;
+  text-align: center;
+}
+body .quest-wraper .page-FeiYe .feiye-nav p span {
+  color: #C7254E;
+}

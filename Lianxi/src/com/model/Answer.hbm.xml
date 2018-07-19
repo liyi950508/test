@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.Answer" 
+    table="answer"
+    lazy="false"
+>
+
+    <id
+        name="answerId"
+        type="java.lang.Integer"
+        column="answer_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="answerName"
+        type="java.lang.String"
+        column="answer_name"
+        length="500"
+    />
+    <property
+        name="answerUser"
+        type="java.lang.String"
+        column="answerUser"
+        length="255"
+    />
+    <property
+        name="answerTime"
+        type="java.sql.Date"
+        column="answerTime"
+        length="10"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,136 @@
+.middle-page {
+  width: 750px;
+  height: 700px;
+  float: left;
+}
+.middle-page .page-header {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #32B757;
+}
+.middle-page .page-header .current {
+  color: #32B757;
+  font-size: 20px;
+  text-align: center;
+  list-style: none;
+}
+.middle-page .upload {
+  width: 100%;
+  height: 570px;
+  margin-top: 30px;
+}
+.middle-page .upload .form {
+  width: 100%;
+}
+.middle-page .upload .form .form-item {
+  width: 100%;
+  height: 70px;
+}
+.middle-page .upload .form .form-item .form-cont {
+  width: 18%;
+  height: 100%;
+  float: left;
+}
+.middle-page .upload .form .form-item .form-cont p {
+  float: right;
+  padding-right: 8px;
+}
+.middle-page .upload .form .form-item .item-cont {
+  width: 77%;
+  height: 100%;
+  float: right;
+}
+.middle-page .upload .form .form-item .item-cont .note {
+  padding-top: 17px;
+}
+.middle-page .upload .form .form-item .item-cont .note .textarea-input {
+  width: 500px;
+  height: 80px;
+}
+.middle-page .upload .form .form-item .form-submit {
+  margin-left: 200px;
+}
+.middle-page .upload .form .form-item .form-submit .item-submit {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #32B757;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+}
+.middle-page .upload .form .form-intro {
+  width: 100%;
+  height: 110px;
+}
+.middle-page .upload .form .form-intro .form-cont {
+  width: 18%;
+  height: 100%;
+  float: left;
+}
+.middle-page .upload .form .form-intro .form-cont p {
+  float: right;
+  padding-right: 8px;
+}
+.middle-page .upload .form .form-intro .item-cont {
+  width: 77%;
+  height: 100%;
+  float: right;
+}
+.middle-page .upload .form .form-intro .item-cont .note {
+  padding-top: 17px;
+}
+.middle-page .upload .form .form-intro .item-cont .note .textarea-input {
+  width: 300px;
+  height: 80px;
+}
+.middle-page .upload .TiShi {
+  width: 100%;
+  margin: 0 30px auto 0;
+}
+.middle-page .upload .TiShi h4 {
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: 1px 1px 0 #eee;
+  margin-bottom: 8px;
+}
+.middle-page .upload .TiShi ol {
+  list-style: none;
+  line-height: 2.1;
+  color: #808080;
+}
+.JiangLiTiShi {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #32B757;
+  margin-left: 850px;
+  margin-top: 80px;
+}
+.JiangLiTiShi .JiangLiTiShi-header {
+  padding: 0 12px;
+  border-bottom: 1px solid #32B757;
+  color: #333333;
+  line-height: 36px;
+}
+.JiangLiTiShi .JiangLiTiShi-header h4 {
+  font-size: 18px;
+}
+.JiangLiTiShi .JiangLiTiShi-aside {
+  padding: 10px 20px;
+}
+.JiangLiTiShi .JiangLiTiShi-aside dl {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.JiangLiTiShi .JiangLiTiShi-aside dl dt {
+  display: list-item;
+  margin-bottom: 4px;
+  list-style: disc inside none;
+  font-weight: 700;
+}
+.JiangLiTiShi .JiangLiTiShi-aside dl ol {
+  color: #666;
+  line-height: 18px;
+}

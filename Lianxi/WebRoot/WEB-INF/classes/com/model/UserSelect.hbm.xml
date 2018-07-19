@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.UserSelect" 
+    table="user_select"
+    lazy="false"
+>
+
+    <id
+        name="userselectId"
+        type="java.lang.Integer"
+        column="userselect_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="selectName"
+        type="java.lang.String"
+        column="select_name"
+        length="255"
+    />
+    <property
+        name="type"
+        type="java.lang.String"
+        column="type"
+        length="255"
+    />
+    <property
+        name="uploadUser"
+        type="java.lang.String"
+        column="upload_user"
+        length="255"
+    />
+    <property
+        name="selectTime"
+        type="java.sql.Date"
+        column="select_time"
+        length="10"
+    />
+    <property
+        name="label"
+        type="java.lang.String"
+        column="label"
+        length="255"
+    />
+    <property
+        name="category"
+        type="java.lang.String"
+        column="category"
+        length="255"
+    />
+    <property
+        name="selectUser"
+        type="java.lang.String"
+        column="select_user"
+        length="255"
+    />
+
+    <!-- Associations -->
+  	<many-to-one name="resource" class="com.model.Resource" fetch="select" unique="true" cascade="save-update">
+  		<column name="resource_id" />
+  	</many-to-one>
+
+</class>
+</hibernate-mapping>

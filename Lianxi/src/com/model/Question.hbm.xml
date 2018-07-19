@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.Question" 
+    table="question"
+    lazy="false"
+>
+
+    <id
+        name="questionId"
+        type="java.lang.Integer"
+        column="question_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="questionName"
+        type="java.lang.String"
+        column="question_name"
+        length="500"
+    />
+    <property
+        name="answerNum"
+        type="java.lang.Integer"
+        column="answerNum"
+        length="10"
+    />
+    <property
+        name="questUser"
+        type="java.lang.String"
+        column="questUser"
+        length="255"
+    />
+    <property
+        name="browseNum"
+        type="java.lang.Integer"
+        column="browseNum"
+        length="10"
+    />
+    <property
+        name="questionTime"
+        type="java.sql.Date"
+        column="questionTime"
+        length="10"
+    />
+    <property
+        name="label"
+        type="java.lang.String"
+        column="label"
+        length="255"
+    />
+    <property
+        name="category"
+        type="java.lang.String"
+        column="category"
+        length="255"
+    />
+	<property
+        name="integral"
+        type="java.lang.Integer"
+        column="integral"
+        length="10"
+    />
+    <property
+        name="isSolve"
+        type="java.lang.String"
+        column="is_solve"
+        length="55"
+    />
+	
+    <!-- Associations -->
+  	<!-- 单向一对多关联Answer -->
+  	<set name="answer" table="answer" inverse="false" lazy="false" cascade="all">
+  		<key>
+  			<column name="question_id" />
+  		</key>
+  		<one-to-many class="com.model.Answer"/>
+  	</set>
+
+</class>
+</hibernate-mapping>

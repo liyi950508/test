@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="com.model.Resource" 
+    table="resource"
+    lazy="false"
+>
+
+    <id
+        name="resourceId"
+        type="java.lang.Integer"
+        column="resource_id"
+    >
+    
+        <generator class="identity" />
+    </id>
+
+    <property
+        name="resourceName"
+        type="java.lang.String"
+        column="resource_name"
+        length="255"
+    />
+    <property
+        name="resourceType"
+        type="java.lang.String"
+        column="resource_type"
+        length="45"
+    />
+    <property
+        name="type"
+        type="java.lang.String"
+        column="type"
+        length="45"
+    />
+    <property
+        name="label"
+        type="java.lang.String"
+        column="label"
+        length="255"
+    />
+    <property
+        name="intro"
+        type="java.lang.String"
+        column="intro"
+        length="65535"
+    />
+    <property
+        name="uploadUser"
+        type="java.lang.String"
+        column="upload_user"
+        length="255"
+    />
+    <property
+        name="isExamine"
+        type="java.lang.String"
+        column="isExamine"
+        length="45"
+    />
+    <property
+        name="uploadTime"
+        type="java.sql.Date"
+        column="upload_time"
+        length="10"
+    />
+    <property
+        name="integral"
+        type="java.lang.Integer"
+        column="integral"
+        length="10"
+    />
+    <property
+        name="downloadNumber"
+        type="java.lang.Integer"
+        column="download_number"
+        length="10"
+    />
+    <property
+        name="browseNumber"
+        type="java.lang.Integer"
+        column="browse_number"
+        length="10"
+    />
+    <property
+        name="collectNumber"
+        type="java.lang.Integer"
+        column="collect_number"
+        length="10"
+    />
+    <property
+        name="category"
+        type="java.lang.String"
+        column="category"
+        length="255"
+    />
+    <property
+        name="commentaryNumber"
+        type="java.lang.Integer"
+        column="commentary_number"
+        length="10"
+    />
+    <property
+        name="resourcePath"
+        type="java.lang.String"
+        column="resource_path"
+        length="255"
+    />
+    <!-- 单向一对一关联userDownload，为主表 -->
+    <one-to-one name="userDownload" class="com.model.UserDownload" cascade="save-update" />
+	
+	 <!-- 双向一对一关联userselect，为主表 -->
+	 <one-to-one name="userSelect" class="com.model.UserSelect" cascade="save-update" />
+  	<!-- 单向一对多关联Comment -->
+  	<set name="comment" table="comment" inverse="false" lazy="false" cascade="save-update">
+  		<key>
+  			<column name="resource_id" />
+  		</key>
+  		<one-to-many class="com.model.Comment"/>
+  	</set>
+</class>
+</hibernate-mapping>
